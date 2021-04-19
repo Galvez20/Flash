@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+.top{
+    display: flex;
+    align-items: stretch;
+
+}
+
+.top >div{
+
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo{
+    flex-grow: 1;
+    align-items: stretch;
+    display: flex;
+}
+
+.imga1{
+    width: 30%;
+    height: 100%;
+    margin: auto;
+}
+
+.imga2{
+    
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.titulo{
+    flex-grow: 4;
+}
+.tituloNombre{
+    color: rgb(1, 36, 59);
+    background-image: url(Imagenes/titulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+.cuerpo{
+    margin: 0 20px 0 20px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(Imagenes/fondo-paisaje.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.instrucciones{
+    color:rgb(4, 51, 153);
+    padding:10px 0px 10px 0;
+    text-align: center;
+    font-family: cursive;
+    font-size: 30px;
+}
+
+.figuras{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: stretch;
+
+}
+
+.boton{
+    background-image: url(Imagenes/boton1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border-color:rgba(95, 37, 37, 0);
+    color: rgb(87, 28, 184);
+    font-family: cursive;
+    height: 300px;
+    width: 150px;
+
+    background-color: rgba(1, 19, 19, 0);
+    /*padding: 17px 34px;*/
+    padding: 0px 0px 120px 0px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: -0.5px;
+
+    font-size: 30px;
+    margin: 4px 2px;
+
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-image: url(Imagenes/boton2.png);
+
+
+}
+
+
+.conteo{
+    display: flex;
+    color: rgb(4, 51, 153);
+    font-size: 50px;
+    font-family: cursive;
+    justify-content: center;
+    padding-right: 30%;
+}
