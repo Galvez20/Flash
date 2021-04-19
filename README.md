@@ -1,5 +1,3 @@
-# Flash
-# Archivos flash a  GSN3 (Javascrip)
 
 Checar las librerias utilizadas:
     [GSAP 3 para animar](https://greensock.com/docs/).
