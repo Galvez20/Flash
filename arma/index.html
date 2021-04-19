@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+  <head>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.js"></script>
+    
+    <title>Tria_fig</title>
+  </head>
+    <body>
+        <!-- Div donde estara la parte superior de la pagina  -->
+        <div class="top">
+            <div class="logo">
+                <img class="imga1" src="Imagenes/logo.png">
+            </div>
+            <div class="titulo">
+                <h3>Mi ayudante Auxiliar did&aacute;ctico de matematicas</h3>
+                    <h1 class="tituloNombre">Figura con el tangram</h1>
+            </div>
+            <div class="logo">
+                <img class="imga2" src="Imagenes/miaylogo.jpg">
+            </div>
+        </div>
+
+        <!-- Aca estara el cuerpo de la pagina  -->
+        <div class="cuerpo">
+            
+            <div class="figuras">
+                 <div class="botones">
+                    <button type="button" class="boton rectangulo" id="rectangulo">Rectangulo</button>
+                    <button type="button" class="boton tria" id="triangulo">Triangulo</button>
+                    <button type="button" class="boton rombo" id="romboide">Romboide</button>
+                    <button type="button" class="boton cuadrado" id="cuadrado">Cuadrado</button>
+                    <button type="button" class="boton trapecio" id="trapecio">Trapecio</button>
+ 
+
+                </div>
+                <svg class="svg" width="1000" height="370" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->    
+                        
+                         <path class="fig" d="m384.18928,182.47196l0.00699,-178.92l-178.92699,178.53272" fill="#ffc700" id="BigTriangle1" stroke="#000000" stroke-width="0" style="transform-origin: 90px 90px;"/>
+                         <path class="fig" d="m205.45996,181.97284l0,178.95113l-178.92699,0" fill="#bf00bf" id="BigTriangle2" stroke="#000000" stroke-width="0" style="transform-origin: 90px 90px;"/>
+                         <path class="fig" d="m205.16963,360.91376l178.92699,0l-89.46349,-89.47557" fill="#5f00bf" id="MediumTriangle" stroke="#000000" stroke-width="0" style="transform-origin: 90px 90px;"/>
+                         <path class="fig" d="m383.49613,361.08924l-89.46349,-89.47557l89.46349,0" fill="#bf005f" id="SmallTriangle1" stroke="#000000" stroke-width="0" style="transform-origin: 90px 90px;"/>
+                         <path class="fig" d="m205.55499,271.68434l0,-89.47556l89.4635,0" fill="#005fbf" id="SmallTriangle2" stroke="#000000" stroke-width="0" style="transform-origin: 90px 90px;"/>
+                         <path class="fig" d="m294.84949,182.18887l0,89.47557l89.46349,0l0,-89.47557" fill="#ff7f00" id="Square" stroke="#000000" stroke-width="0" style="transform-origin: 90px 90px;"/>
+                         <path class="fig" d="m294.76108,182.12675l-89.4635,89.47556l0,89.47557l89.4635,-89.47557" fill="#5fbf00" id="Rombo" stroke="#000000" stroke-width="0" style="transform-origin: 90px 90px;"/>
+                         <path class="fig" d="m419.151,203.5325l-89.4635,-89.47l0,89.47l89.4635,89.481" fill="#5fbf00" id="Rombo2" stroke="#000000" stroke-width="0"/>
+
+                </svg> 
+                    <div class="ord">
+                        <button type="button" class="boton volver" id="volver">Volver</button>
+                        <h1 class="name" id="nombre">Rectangulo</h1>
+                    </div>
+                    
+
+
+                    
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

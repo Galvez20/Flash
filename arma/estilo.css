@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+.top{
+    display: flex;
+    align-items: stretch;
+
+}
+
+.top >div{
+
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.logo{
+    flex-grow: 1;
+    align-items: stretch;
+    display: flex;
+}
+
+.imga1{
+    width: 30%;
+    height: 100%;
+    margin: auto;
+}
+
+.imga2{
+    
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.titulo{
+    flex-grow: 4;
+}
+.tituloNombre{
+    color: rgb(1, 36, 59);
+    background-image: url(Imagenes/titulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+.cuerpo{
+    margin: 20px 10px 0 10px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-image: url(Imagenes/fondo-paisaje.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.svg{
+    margin: auto;
+}
+
+.instrucciones{
+    color:rgb(4, 51, 153);
+    padding:auto;
+    text-align: center;
+    font-family: Arial Black;
+    font-size: 20px;
+}
+
+
+.figuras{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.botones{
+    display: flex;
+
+}
+.boton{
+    border-color:rgba(95, 37, 37, 0);
+    color: rgb(87, 28, 184);
+    font-family: cursive;
+    height: 100px;
+    width: 400px;
+
+    background-color: rgba(0, 0, 0, 0.274);
+    /*padding: 17px 34px;*/
+
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: -0.5px;
+
+    font-size: 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.trapecio{
+    background-image: url(Imagenes/trapecio.png);
+}
+
+.trapecio:hover{
+    background-image: url(Imagenes/trapecio-b.png);
+}
+
+.rombo{
+    background-image: url(Imagenes/rombo.png);
+}
+
+.rombo:hover{
+    background-image: url(Imagenes/rombo-b.png);
+}
+
+.rectangulo{
+    background-image: url(Imagenes/rectangulo.png);
+}
+
+.rectangulo:hover{
+    background-image: url(Imagenes/rectangulo-b.png);
+}
+
+.tria{
+    background-image: url(Imagenes/triangulo.png);
+}
+
+.tria:hover{
+    background-image: url(Imagenes/triangulo-b.png);
+}
+
+.cuadrado{
+    background-image: url(Imagenes/cuadrado.png);
+}
+
+.cuadrado:hover{
+    background-image: url(Imagenes/cuadrado-b.png);
+}
+
+.volver{
+    background-image: url(Imagenes/flecha.png);
+}
+.volver:hover{
+    background-image: url(Imagenes/flecha-b.png);
+}
+
+.ord{
+    display: flex;
+}
+
+.name{
+    color: rgba(5, 49, 160, 0.953);
+    text-shadow: 2px 2px 5px rgb(0, 123, 255);
+    font-size: 65px;
+}
