@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+.top{
+    display: flex;
+    align-items: stretch;
+
+}
+
+.top >div{
+
+    text-align: center;
+}
+
+.logo{
+
+    width: 20%;
+    flex-grow: 1;
+    align-items: stretch;
+    display: flex;
+}
+
+.imga1{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+}
+
+.imga2{
+    
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.titulo{
+    margin-top: 0.4%;
+    width: 60%;
+    flex-grow: 4;
+}
+.titulo >h3{
+    font-size: 1.9vw;
+}
+.tituloNombre{
+    font-size: 2.9vw;
+    color: rgb(1, 36, 59);
+    background-image: url(Imagenes/titulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+.cuerpo{
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    background-image: url(Imagenes/fondo-paisaje.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.svg{
+    position:relative; left:5vw;top: -2vw;
+}
+
+.instrucciones{
+
+    font-family: Arial Black;
+    color:rgb(4, 51, 153);
+    padding:0.5% 0 0.5% 0;    
+    text-align: center;
+    font-size: 1.6vw;
+}
+
+
+.nombreFig{
+    font-size: 6vw;
+}
+
+.figuras{
+    display: flex;
+    flex-direction: column;
+}
+
+.boton{
+
+    background-repeat: no-repeat;
+    background-position: left;
+    
+    border-color:rgba(95, 37, 37, 0);
+    color: rgb(87, 28, 184);
+    font-family: cursive;
+    height: 10vw;
+    width: 20vw;
+
+    padding-left: 2vw;
+    background-color: rgba(0, 0, 0, 0);
+    /*padding: 17px 34px;*/
+
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: -0.1vw;
+
+    font-size: 2.2vw ;
+    cursor: pointer;
+}
+
+
+.trapecio{
+    background-image: url(Imagenes/trapecio.png);
+    background-size: 11vw 7vw;
+    background-repeat: no-repeat;
+    background-position: left;
+    position:absolute; top:15vw; left:47vw;
+    z-index: 1;
+}
+
+.trapecio:hover{
+    background-image: url(Imagenes/trapecio-b.png);
+    background-image: url(Imagenes/trapecio.png);
+    background-size: 12vw 8vw;
+}
+
+.rombo{
+    background-image: url(Imagenes/rombo.png);
+    background-size: 13vw 7vw;
+    background-repeat: no-repeat;
+    background-position: left;
+    position:absolute; top:25vw; left:30vw;
+    z-index: 1;
+}
+
+.rombo:hover{
+    background-image: url(Imagenes/rombo-b.png);
+    background-size: 15vw 8vw;
+}
+
+.rectangulo{
+    background-image: url(Imagenes/rectangulo.png);
+    background-size: 11vw 7vw;
+    background-repeat: no-repeat;
+    background-position: left;
+    position:absolute; top:33vw; left:60vw;
+    z-index: 1;
+}
+
+.rectangulo:hover{
+    background-image: url(Imagenes/rectangulo-b.png);
+    background-size: 12vw 8vw;
+}
+
+.volver{
+    background-image: url(Imagenes/flecha.png);
+    background-size: 9vw 7vw;
+    background-repeat: no-repeat;
+    background-position: left;
+    position:absolute; top:25vw; left:70vw;
+    z-index: 1;
+}
+.volver:hover{
+    background-image: url(Imagenes/flecha-b.png);
+    background-size: 10vw 8vw;
+}
+
