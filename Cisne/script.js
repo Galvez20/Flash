@@ -8,11 +8,70 @@ var bandera_ayuda = 0;
  * Bandera 1 -> modo ayuda
  * Bandera 2 -> figura completada
  */
-
 var tl = gsap.timeline(); //creamos una linea de tiempo para las animaciones
-tl.to(".figAyuda",{duration:0, opacity:0, scale:0});
-tl.to(".felicitaciones",{duration:0,opacity:0, scale:0,x:150, y:0}); //pocision inicial de mensaje
+var t2 = gsap.timeline(); //linea de tiempo 2 (solo para el boton de ayuda)
+tl.to(".figAyuda",{duration:0, opacity:0, scale:0})
+  .to(".felicitaciones",{duration:0,opacity:0, scale:0,x:150, y:0}); //pocision inicial de mensaje
 
+//Cambio de las instrucciones-------------------------------------
+
+var textWrapper = document.querySelector('.instrucciones');
+
+function animar(){
+  anime.timeline()
+  .add({
+    targets: '.instrucciones .letter',
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1400,
+    delay: 400
+  }).add({
+    targets: '.instrucciones .letter',
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1400,
+    delay: 400
+  });
+}
+
+function iniciarAnimation(){
+  textWrapper.innerHTML=instrucciones[posicion];
+  posicion +=1;
+  if (posicion > 3) {
+    posicion = 0;
+  }
+  textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+  animar()
+}
+
+function comenzarAnimacion(){
+  iniciarAnimation();
+  id =setInterval(()=>{
+    textWrapper.innerHTML=instrucciones[posicion];
+    posicion +=1;
+    if (posicion > 3) {
+      posicion = 0;
+    }
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+    animar();
+  }
+  ,3500);
+}
+
+let posicion = 0;
+let instrucciones = ["has clic sobre las figuras de color del tangram",
+                    "y arr\u00E1stralas hacia el caminante",
+                    "cada vez que coloques una figura en el lugar correcto,",
+                    "la figura cambiar\u00E1 de color y se quedar\u00E1  en su lugar"];
+                    
+                    
+
+
+comenzarAnimacion()
+
+
+//----------------------------------------------------
 
 var overlapThreshold = "70%"; //Area minima aceptada
 
@@ -20,43 +79,47 @@ function ganar(){  //Funcion que es llamada para compara si las figuras ya estan
   document.getElementById('Nbuenas').innerHTML="Buenas: "+conteo; //
   if (conteo === 7){
     console.log("LISTO");
-    bandera_ayuda = 2;
-    tl.to(".felicitaciones",{duration:0,opacity:1, scale:1});
+    bandera_ayuda = 2; //activa la bandera
+    tl.to(".conteobuenas",{duration:0,opacity:0, scale:0})
+    .to(".layer",{duration:1, x:-300}) //mueve la figura completada
+    .to(".felicitaciones",{duration:0,opacity:1, scale:1}); //mensaje de felicitar
+    clearInterval(id); //termina el proceso
+    textWrapper.innerHTML=".";
+
+    document.getElementById("boton").outerHTML = ""; //elimina el boton
   }
 }
 
-//Funciones que detectan los botones
-document.getElementById("reinicio").addEventListener("click",()=>{ //activa una funcion tras precionar el boton "Reinicio"
-  if(bandera_ayuda==0 || bandera_ayuda ==2){
+//Funciones que detectan el botones
+document.getElementById("boton").addEventListener("click",()=>{ //activa una funcion tras precionar el boton 
+  if(bandera_ayuda==1){
+    console.log("Modo normal");
     tl.to(".fig", {duration:0, x:0, y:0, rotation:0, opacity:1, scale:1 }); //todas las figuras movibles regresan a su posicion
     tl.to(".figNull",{duration:0, fill:"#afafaf"}); //todas las figuras inamovibles regresan a tener su color principal
-    tl.to(".svg",{duration:0, x:0}); //en el caso de que la figura fuera completada, volveria a su lugar de origen
-    tl.to(".felicitaciones",{duration:0,opacity:0, scale:0}); 
+    tl.to(".figAyuda",{duration:0, opacity:0, scale:0, rotation:0}); // la figura de ayuda vuelve a us sitio
+    tl.to(".layer",{duration:0, x:0}); //en el caso de que la figura fuera completada, volveria a su lugar de origen
+    tl.to(".felicitaciones",{duration:0,opacity:0, scale:0});  
     conteo = 0;
     bandera_ayuda=0; 
+    document.getElementById("boton").innerHTML="Ayuda"; //camvia el mensaje de "Ayuda" a "Volver"
     document.getElementById('Nbuenas').innerHTML=".";
-  }
-});
 
-document.getElementById("ayuda").addEventListener("click",()=>{ //activa una funcion tras precionar el boton "A"
-  if(bandera_ayuda==0){
+    comenzarAnimacion();
+  }
+  else{  //ayuda 
+    clearInterval(id);//Para la animacion de las letras
+    textWrapper.innerHTML=".";
+    posicion = 0;
     conteo = 0;
+    console.log("Modo ayuda");
     document.getElementById('Nbuenas').innerHTML=".";
     tl.to(".fig",{duration:0, opacity:0, scale:0});  //las figuras pasan a ser invisibles
-    tl.to(".figNull",{duration:0,fill:"#bfbfbf"});  //la figura pasa a ser de color gris
-    tl.to(".figAyuda",{duration:0, x:0, y:0, opacity:1, scale:1}) //la figura de ayuda (la que se mueve sola) comienza su reccorio
-      .to(".figAyuda",{duration:1.2, rotation:45})
-      .to(".figAyuda",{duration:1, x:280})
-      .to(".figAyuda",{duration:1, y:35});
+    tl.to(".figNull",{duration:0,fill:"#dfdfdf"});  //la figura pasa a ser de color gris
+    t2.to(".figAyuda",{duration:0, x:0, y:0, opacity:1, scale:1}) //la figura de ayuda (la que se mueve sola) comienza su reccorio
+      .to(".figAyuda",{duration:1, rotation:45})
+      .to(".figAyuda",{duration:1, x:263, y:93});
     bandera_ayuda=1;
-    document.getElementById("ayuda").innerHTML="Volver";
-  }else if (bandera_ayuda == 1){
-    tl.to(".fig",{duration:0, opacity:1, scale:1, x:0, y:0,rotation:0});
-    tl.to(".figNull",{duration:0,fill:"#afafaf"});
-    tl.to(".figAyuda",{duration:0, opacity:0, scale:0, rotation:0});
-    bandera_ayuda=0;
-    document.getElementById("ayuda").innerHTML="Ayuda";
-    document.getElementById('Nbuenas').innerHTML=".";
+    document.getElementById("boton").innerHTML="Volver"; //camvia el mensaje de "Ayuda" a "Volver"
   }
 })
 //-------------------Funciones que mueven las figuras con el mouse
@@ -65,6 +128,7 @@ document.getElementById("ayuda").addEventListener("click",()=>{ //activa una fun
 /*Mover el triangulo grande Verde*/
 Draggable.create("#BigTriangle1", {            
   type: "x,y",                              //tipo de movimiento
+  bounds:"svg",
   onDrag:function(e){                       //funcion que es llamada tras detecta un click del mouse a la figura
     tl.to(this.target, {duration: 0}); //El triangulo gira 45 grados
   },
@@ -84,6 +148,7 @@ Draggable.create("#BigTriangle1", {
 
 Draggable.create("#BigTriangle2",{
   type:"x,y",
+  bounds:"svg",
   onDrag:function(e){
     tl.to(this.target, {duration:0, rotation:90})
   },
@@ -102,6 +167,7 @@ Draggable.create("#BigTriangle2",{
 /*Mover el triangulo Mediano rosado */
 Draggable.create("#MediumTriangle",{
   type:"x,y",
+  bounds:"svg",
   onDrag:function(e){
     tl.to(this.target, {duration:0, rotation:45})
   },
@@ -120,6 +186,7 @@ Draggable.create("#MediumTriangle",{
 /*Mover el tringulo pequeño verdeAgua bajo */
 Draggable.create("#SmallTriangle1",{
   type:"x,y",
+  bounds:"svg",
   onDrag:function(e){
     tl.to(this.target, {duration:0, rotation:-135})
   },
@@ -138,6 +205,7 @@ Draggable.create("#SmallTriangle1",{
 /*Mover el triangulo pequeño Azul cielo */
 Draggable.create("#SmallTriangle2",{
   type:"x,y",
+  bounds:"svg",
   onDrag:function(e){
     tl.to(this.target, {duration:0, rotation:45})
   },
@@ -156,6 +224,7 @@ Draggable.create("#SmallTriangle2",{
 /*mover el cuadrardo*/
 Draggable.create("#Square",{
   type:"x,y",
+  bounds:"svg",
   onDrag:function(e){
     tl.to(this.target, {duration:0, rotation:45})
   },
@@ -174,6 +243,7 @@ Draggable.create("#Square",{
 /*Mover el Rombo */
 Draggable.create("#Rombo",{
   type:"x,y",
+  bounds:"svg",
   onDrag:function(e){
     tl.to(this.target, {duration:0, rotation:-45})
   },

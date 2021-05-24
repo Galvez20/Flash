@@ -5,7 +5,8 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
     <title>Cami</title>
   </head>
     <body>
@@ -25,17 +26,18 @@
 
         <!-- Aca estara el cuerpo de la pagina  -->
         <div class="cuerpo">
-                <p class="instrucciones">Coloque las figuras en el lugar correcto para formar a una persona</p>
+                <p class="instrucciones" id="instrucciones">has clic sobre las figuras de color del tangram</p>
                 <div class="figuras">
-                    <svg class="svg" width="900" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
-                        <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->    
-                        <path d="m609.68468,260.21777l130,0l0,-130" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(-135 674.685 195.218)"/>
-                        <path d="m697.31546,39.18987l0,65l-65,0" fill="#000000" stroke="#000000" stroke-width="0"/>
-                        <path d="m480.10944,259.03611l65,65l65,0l-65,-65" fill="#000000" stroke="#000000" stroke-width="0"/>
-                        <path d="m679.35742,235.43258l0,65l65,0l0,-65" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(-45 711.857 267.933)"/>
-                        <path d="m609.45312,325.08193l130,0l0,-130" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(180 674.453 260.082)"/>
-                        <path d="m748.3165,283.4048l0,65l-65,0" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(90 715.817 315.905)"/>
-                        <path d="m618.53273,118.99998l91.9,0l0,-91.9" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(-180 664.483 73.05)"/>
+                    <svg class="svg" viewBox="0 0 850 380" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->   
+                        <g class="layer">
+                        <path  d="m609.68468,260.21777l130,0l0,-130" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(-135 674.685 195.218)"/>
+                        <path  d="m697.31546,39.18987l0,65l-65,0" fill="#000000" stroke="#000000" stroke-width="0"/>
+                        <path  d="m480.10944,259.03611l65,65l65,0l-65,-65" fill="#000000" stroke="#000000" stroke-width="0"/>
+                        <path  d="m679.35742,235.43258l0,65l65,0l0,-65" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(-45 711.857 267.933)"/>
+                        <path  d="m609.45312,325.08193l130,0l0,-130" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(180 674.453 260.082)"/>
+                        <path  d="m748.3165,283.4048l0,65l-65,0" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(90 715.817 315.905)"/>
+                        <path  d="m618.53273,118.99998l91.9,0l0,-91.9" fill="#000000" stroke="#000000" stroke-width="0" transform="rotate(-180 664.483 73.05)"/>
 
                         <path class="figNull" d="m603.93456,258.5051l130,0l0,-130" fill="#a3c4a7" id="BigTriangleNull1" stroke="#000000" stroke-width="0" transform="rotate(-135 668.934 193.505)"/>
                         <path class="figNull" d="m691.56534,37.4772l0,65l-65,0" fill="#a3c4a7" id="SmallTriangleNull2" stroke="#000000" stroke-width="0"/>
@@ -52,17 +54,18 @@
                         <path class="fig" d="m199.41843,196.38016l130,0l-65,-65" fill="#106fce" id="MediumTriangle" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
                         <path class="fig" d="m264.14226,196.15063l65,65l-65,0" fill="#00db42" id="SmallTriangle1" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
                         <path class="fig" d="m199.58572,196.22042l0,65l-65,0" fill="#bf10cc" id="SmallTriangle2" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m199.60994,196.24962l0,65l65,0l0,-65" fill="#ff7f00" id="Square" stroke="#000000" stroke-width="0" style="transform-origin: 30px 30px;"/>
+                        <path class="fig" d="m199.60994,196.24962l0,65l65,0l0,-65" fill="#ff7f00" id="Square" stroke="#000000" stroke-width="0" style="transform-origin: 45px 45px;"/>
                         <path class="fig" d="m264.43869,196.39339l65,65l65,0l-65,-65" fill="#ff007f" id="Rombo" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                    </g> 
                     </svg> 
-                               
-                    <button type="button" class="boton" id="ayuda">Ayuda</button>
-                    <button type="button" class="boton" id="reinicio">Reiniciar</button>
+                    <div class="boton-div">
+                        <button type="button" class="boton boton2" id="boton">Ayuda</button>
+                    </div>          
                 </div>
-                <div class="conteo">
-                    <p id="Nbuenas">.</p>
-                    <p class="felicitaciones">Bien hecho :-)</p>
-                </div>
+
+                    <p class="conteo conteobuenas" id="Nbuenas">.</p>
+                    <p class="conteo felicitaciones">Bien hecho :-)</p>
+
         </div>
         <script src="script.js"></script>
     </body>

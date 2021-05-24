@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     
     <title>Gato</title>
   </head>
@@ -26,44 +26,47 @@
 
         <!-- Aca estara el cuerpo de la pagina  -->
         <div class="cuerpo">
-                <p class="instrucciones">Coloque las figuras en el lugar correcto para formar a Gato</p>
+                <p class="instrucciones" id="instrucciones">has clic sobre las figuras de color del tangram</p>
                 <div class="figuras">
-                    <svg class="svg" width="600" height="400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <svg class="svg" viewBox=" 0 0 920 400" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                         <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->    
-                        <path d="m381.516337,126.281992l0,126.657928l126.301968,126.657928l0,-126.657928" fill="#371159" id="svg_19" stroke="#000000" stroke-width="0"/>
-                        <path d="m435.048683,72.627417l53.589925,53.728293l-53.589925,53.740959l-53.577295,-53.740959" fill="#371159" id="svg_20" stroke="#000000" stroke-width="0"/>
-                        <path d="m488.480334,19.116465l-53.577295,53.728293l53.577295,53.740959" fill="#371159" id="svg_21" stroke="#000000" stroke-width="0"/>
-                        <path d="m381.323995,19.10906l53.577295,53.728293l-53.577295,53.740959" fill="#371159" id="svg_22" stroke="#000000" stroke-width="0"/>
-                        <path d="m453.796969,325.510013l53.589925,53.728293l-107.16722,0" fill="#371159" id="svg_23" stroke="#000000" stroke-width="0"/>
-                        <path d="m571.170845,316.274777l-63.150984,0l0,63.328964" fill="#371159" id="svg_24" stroke="#000000" stroke-width="0"/>
-                        <path d="m571.146426,253.174027l0,63.328964l-63.150984,0" fill="#371159" id="svg_25" stroke="#000000" stroke-width="0"/>
-
-                        <path class="figNull" d="m381.772033,129.009506l0,123.248277l118.832017,123.248277l0,-123.248277" fill="#9a99ff" id="RomboNull" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m432.138283,76.79932l50.420425,52.281919l-50.420425,52.294244l-50.408541,-52.294244" fill="#9a99ff" id="SquareNull" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m482.409795,24.728892l-50.408541,52.281919l50.408541,52.294244" fill="#9a99ff" id="TriangleRed2Null" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m381.591066,24.033149l50.408541,52.281919l-50.408541,52.294244" fill="#9a99ff" id="TriangleRed1Null" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m450.273379,322.488726l50.420425,52.281919l-100.828966,0" fill="#9a99ff" id="TrianglePinkNull" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m559.961867,313.502104l-59.416008,0l0,61.624138" fill="#9a99ff" id="TriangleGreen1Null" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m560.186716,252.485588l0,61.624138l-59.416008,0" fill="#9a99ff" id="TriangleGreen2Null" stroke="#000000" stroke-width="0"/>
-
-                        <path class="figAyuda" d="m318.708003,220.68794l0,61.624138l-59.416008,0" fill="#007f00" id="svg_1" stroke="#000000" stroke-width="0"/>
-
-                        <path class="fig" d="m89.998812,127.171563l0,123.248277l118.832017,123.248277l0,-123.248277" fill="#ffcc00" id="Rombo" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m28.501818,246.403112l50.408541,52.281919l-50.408541,52.294244" fill="#ff0000" id="TriangleRed1" stroke="#000000" stroke-width="0" style="transform-origin: 60px 60px;"/>
-                        <path class="fig" d="m102.949822,313.957022l50.420425,52.281919l-100.828966,0" fill="#ff00ff" id="TrianglePink" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m251.584092,148.608169l50.420425,52.281919l-50.420425,52.294244l-50.408541,-52.294244" fill="#4c00ff" id="Square" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m327.740803,85.179131l-50.408541,52.281919l50.408541,52.294244" fill="#ff0000" id="TriangleRed2" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m228.906074,117.323309l-59.416008,0l0,61.624138" fill="#007f00" id="TriangleGreen1" stroke="#000000" stroke-width="0" style="transform-origin: 30px 30px;"/>
-                        <path class="fig" d="m326.476436,215.476491l0,61.624138l-59.416008,0" fill="#007f00" id="TriangleGreen2" stroke="#000000" style="transform-origin: 50px 50px;"/>
+                        <g class="layer">
+                        <path d="m538.23376,125.33264l0,126.65793l126.30197,126.65793l0,-126.65793" fill="#371159" id="svg_19" stroke="#000000" stroke-width="0"/>
+                        <path d="m591.94639,72.18652l53.58993,53.72829l-53.58993,53.74096l-53.57729,-53.74096" fill="#371159" id="svg_20" stroke="#000000" stroke-width="0"/>
+                        <path d="m645.37804,18.67557l-53.57729,53.72829l53.57729,53.74096" fill="#371159" id="svg_21" stroke="#000000" stroke-width="0"/>
+                        <path d="m538.22171,18.66816l53.57729,53.72829l-53.57729,53.74096" fill="#371159" id="svg_22" stroke="#000000" stroke-width="0"/>
+                        <path d="m610.69468,324.01277l53.58992,53.7283l-107.16722,0" fill="#371159" id="svg_23" stroke="#000000" stroke-width="0"/>
+                        <path d="m726.83615,314.24937l-63.15098,0l0,63.32896" fill="#371159" id="svg_24" stroke="#000000" stroke-width="0"/>
+                        <path d="m726.72487,251.15001l0,63.32896l-63.15099,0" fill="#371159" id="svg_25" stroke="#000000" stroke-width="0"/>
+                        
+                        <path class="figNull" d="m538.14157,128.04044l0,123.24827l118.83202,123.24828l0,-123.24828" fill="#9a99ff" id="RomboNull" stroke="#000000" stroke-width="0"/>
+                        <path class="figNull" d="m588.55993,75.85842l50.42043,52.28192l-50.42043,52.29424l-50.40854,-52.29424" fill="#9a99ff" id="SquareNull" stroke="#000000" stroke-width="0"/>
+                        <path class="figNull" d="m639.3075,24.28799l-50.40854,52.28192l50.40854,52.29425" fill="#9a99ff" id="TriangleRed2Null" stroke="#000000" stroke-width="0"/>
+                        <path class="figNull" d="m538.14089,23.69647l50.40854,52.28192l-50.40854,52.29424" fill="#9a99ff" id="TriangleRed1Null" stroke="#000000" stroke-width="0"/>
+                        <path class="figNull" d="m606.81897,322.39994l50.42042,52.28192l-100.82896,0" fill="#9a99ff" id="TrianglePinkNull" stroke="#000000" stroke-width="0"/>
+                        <path class="figNull" d="m716.33141,313.0612l-59.41601,0l0,61.62414" fill="#9a99ff" id="TriangleGreen1Null" stroke="#000000" stroke-width="0"/>
+                        <path class="figNull" d="m716.29287,251.64891l0,61.62414l-59.41601,0" fill="#9a99ff" id="TriangleGreen2Null" stroke="#000000" stroke-width="0"/>
+                        
+                        <path class="figAyuda" d="m475.60571,220.24704l0,61.62414l-59.416,0" fill="#007f00" id="svg_1" stroke="#000000" stroke-width="0"/>
+                        
+                        <path class="fig" d="m246.89652,126.73066l0,123.24828l118.83202,123.24828l0,-123.24828" fill="#ffcc00" id="Rombo" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m185.39953,245.96221l50.40854,52.28192l-50.40854,52.29424" fill="#ff0000" id="TriangleRed1" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m259.84753,313.51612l50.42043,52.28192l-100.82897,0" fill="#ff00ff" id="TrianglePink" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m408.4818,148.16727l50.42043,52.28192l-50.42043,52.29424l-50.40854,-52.29424" fill="#4c00ff" id="Square" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m484.63851,84.73823l-50.40854,52.28192l50.40854,52.29424" fill="#ff0000" id="TriangleRed2" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m385.80378,116.88241l-59.416,0l0,61.62414" fill="#007f00" id="TriangleGreen1" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m483.37415,215.03559l0,61.62414l-59.41601,0" fill="#007f00" id="TriangleGreen2" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                    </g>
                     </svg> 
                                
-                    <button type="button" class="boton" id="ayuda">Ayuda</button>
-                    <button type="button" class="boton" id="reinicio">Reiniciar</button> 
+                    <div class="boton-div">
+                        <button type="button" class="boton boton2 boton3" id="boton">Ayuda</button>
+                    </div>          
                 </div>
-                <div class="conteo">
-                    <p id="Nbuenas">.</p>
-                    <p class="felicitaciones">Bien hecho :-)</p>
-                </div>
+
+                    <p class="conteo conteobuenas" id="Nbuenas">.</p>
+                    <p class="conteo felicitaciones">Bien hecho :-)</p>
+
         </div>
         <script src="script.js"></script>
     </body>

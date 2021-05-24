@@ -5,7 +5,7 @@
     <link rel="stylesheet" type="text/css" href="estilo.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     
     <title>Futbolista</title>
   </head>
@@ -26,38 +26,39 @@
 
         <!-- Aca estara el cuerpo de la pagina  -->
         <div class="cuerpo">
-                <p class="instrucciones">Coloque las figuras en el lugar correcto para formar a un portero</p>
+                <p class="instrucciones" id="instrucciones">has clic sobre las figuras de color del tangram</p>
                 <div class="figuras">
-                    <svg class="svg" width="600" height="400" style="order: 3" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                    <svg class="svg" viewBox="0 0 850 420" style="order: 3" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
                         <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->    
-                        <path class="figNull" d="m504.14184,276.66994l130,0l0,-130" fill="#a3c4a7" id="BigTriangleNull1" stroke="#000000" stroke-width="0" transform="rotate(135 569.141 211.67)"/>
-                        <path class="figNull" d="m427.94139,160.85642l0,65l-65,0" fill="#a3c4a7" id="SmallTriangleNull2" stroke="#000000" stroke-width="0" transform="rotate(90 395.442 193.356)"/>
-                        <path class="figNull" d="m392.79574,191.49646l65,65l65,0l-65,-65" fill="#a3c4a7" id="RomboNull" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m471.61379,31.00754l0,65l65,0l0,-65" fill="#a3c4a7" id="SquareNull" stroke="#000000" stroke-width="0" transform="rotate(45 504.113 63.5075)"/>
-                        <path class="figNull" d="m418.65823,178.63791l130,0l0,-130" fill="#a3c4a7" id="BigTriangleNull2" stroke="#000000" stroke-width="0" transform="rotate(45 483.658 113.638)"/>
-                        <path class="figNull" d="m472.77633,299.25129l0,65l-65,0" fill="#a3c4a7" id="SmallTriangleNull1" stroke="#000000" stroke-width="0"/>
-                        <path class="figNull" d="m428.40072,344.73974l91.9,0l0,-91.9" fill="#a3c4a7" id="MediumTriangleNull" stroke="#000000" stroke-width="0" transform="rotate(180 474.351 298.789)"/>
-                        
-                        <path class="figAyuda" d="m124.54229,241.45844l130,0l-130,130" fill="#ffff00" id="svg_9" stroke="#000000" stroke-width="0"/>
+                        <g class="layer">
+                            <path class="figNull" d="m626.14184,284.66994l130,0l0,-130" fill="#a3c4a7" id="BigTriangleNull1" stroke="#000000" stroke-width="0" transform="rotate(135 691.142 219.67)"/>
+                            <path class="figNull" d="m549.94139,168.85642l0,65l-65,0" fill="#a3c4a7" id="SmallTriangleNull2" stroke="#000000" stroke-width="0" transform="rotate(90 517.442 201.356)"/>
+                            <path class="figNull" d="m514.79574,199.49646l65,65l65,0l-65,-65" fill="#a3c4a7" id="RomboNull" stroke="#000000" stroke-width="0"/>
+                            <path class="figNull" d="m593.61379,39.00754l0,65l65,0l0,-65" fill="#a3c4a7" id="SquareNull" stroke="#000000" stroke-width="0" transform="rotate(45 626.113 71.5075)"/>
+                            <path class="figNull" d="m540.65823,186.63791l130,0l0,-130" fill="#a3c4a7" id="BigTriangleNull2" stroke="#000000" stroke-width="0" transform="rotate(45 605.658 121.638)"/>
+                            <path class="figNull" d="m594.77633,307.25129l0,65l-65,0" fill="#a3c4a7" id="SmallTriangleNull1" stroke="#000000" stroke-width="0"/>
+                            <path class="figNull" d="m550.40072,352.73974l91.9,0l0,-91.9" fill="#a3c4a7" id="MediumTriangleNull" stroke="#000000" stroke-width="0" transform="rotate(180 596.351 306.789)"/>
+                            
+                            <path class="figAyuda" d="m246.54229,249.45844l130,0l-130,130" fill="#ffff00" id="svg_9" stroke="#000000" stroke-width="0"/>
 
-                        <path class="fig" d="m32.52092,238.30281l130,0l-130,130" fill="#ffff00" id="BigTriangle1" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m162.52385,238.40639l130,0l0,130" fill="#ff0000" id="BigTriangle2" stroke="#000000" stroke-width="0" style="transform-origin: 60px 60px;"/>
-                        <path class="fig" d="m97.62738,303.41001l130,0l-65,-65" fill="#106fce" id="MediumTriangle" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m162.35121,303.18048l65,65l-65,0" fill="#00db42" id="SmallTriangle1" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m97.79467,303.25027l0,65l-65,0" fill="#bf10cc" id="SmallTriangle2" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
-                        <path class="fig" d="m97.81889,303.27947l0,65l65,0l0,-65" fill="#ff7f00" id="Square" stroke="#000000" stroke-width="0" style="transform-origin: 30px 30px;"/>
-                        <path class="fig" d="m162.64764,303.42324l65,65l65,0l-65,-65" fill="#ff007f" id="Rombo" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m154.52092,246.30281l130,0l-130,130" fill="#ffff00" id="BigTriangle1" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m284.52385,246.40639l130,0l0,130" fill="#ff0000" id="BigTriangle2" stroke="#000000" stroke-width="0" style="transform-origin: 80px 40px;"/>
+                        <path class="fig" d="m219.62738,311.41001l130,0l-65,-65" fill="#106fce" id="MediumTriangle" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m284.35121,311.18048l65,65l-65,0" fill="#00db42" id="SmallTriangle1" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m219.79467,311.25027l0,65l-65,0" fill="#bf10cc" id="SmallTriangle2" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
+                        <path class="fig" d="m219.81889,311.27947l0,65l65,0l0,-65" fill="#ff7f00" id="Square" stroke="#000000" stroke-width="0" style="transform-origin: 30px 30px;"/>
+                        <path class="fig" d="m284.64764,311.42324l65,65l65,0l-65,-65" fill="#ff007f" id="Rombo" stroke="#000000" stroke-width="0" style="transform-origin: 50px 50px;"/>
                     
-                        <ellipse cx="47.2067" cy="155.30726" fill="#d84400" id="pelota" rx="43.29609" ry="41.89944" stroke="#000000"/>
+                        <ellipse cx="169.2067" cy="163.30726" fill="#d84400" id="pelota" rx="43.29609" ry="41.89944" stroke="#000000"/>
+                        </g> 
                     </svg> 
-                               
-                    <button type="button" class="boton" style="order: 1" id="ayuda">Ayuda</button>
-                    <button type="button" class="boton" style="order: 2" id="reinicio">Reiniciar</button>
+                    <div class="boton-div">
+                        <button type="button" class="boton boton2" id="boton">Ayuda</button>
+                    </div>          
                 </div>
-                <div class="conteo">
-                    <p id="Nbuenas">.</p>
-                    <p class="felicitaciones">Bien hecho :-)</p>
-                </div>
+
+                    <p class="conteo conteobuenas" id="Nbuenas">.</p>
+                    <p class="conteo felicitaciones">Bien hecho :-)</p>
         </div>
         <script src="script.js"></script>
     </body>
