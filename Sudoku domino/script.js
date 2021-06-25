@@ -72,7 +72,7 @@ Draggable.create( ".fichas", {                //Asignamos la clase de las fichas
     type: "x,y",                              //tipo de movimiento
     bounds:"svg",                             //las fichas no pueden salir desde su espacio
                     
-    onDragStart:function(e){                  //funcion que es llamada tras detecta un click del mouse a la figura
+    onPress:function(e){                  //funcion que es llamada tras detecta un click del mouse a la figura
         
         console.log(this.target.attributes['data-num']);                    //Imprime el dato que tiene la ficha en 'data-num'
         let valor = this.target.attributes['data-num'].value;               //asignamos el valor de la ficha
@@ -243,25 +243,4 @@ function CuadrosOcupados(num,nombre,bar){
         }
         espaciosOcupados[num][1] = "";
     }
-    /*
-    if (bar == 1){
-        espaciosOcupados[num1][0] = 1;
-        espaciosOcupados[num2][0] = 1;
-        espaciosOcupados[num][0] = 1;
-        espaciosOcupados[num1][1] = nombre+"-";
-        espaciosOcupados[num2][1] = nombre+"-";
-        espaciosOcupados[num][1] = nombre;
-    } else{
-        espaciosOcupados[num1][0] = 0;
-        espaciosOcupados[num2][0] = 0;
-        espaciosOcupados[num][0] = 0;
-        if (espaciosOcupados[num1][1] == nombre+"-"){
-            espaciosOcupados[num1][1] = "";
-        }
-        if (espaciosOcupados[num2][1] == nombre+"-"){
-            espaciosOcupados[num2][1] = "";
-        }
-        espaciosOcupados[num][1] = "";
-    }
-    */
 }
