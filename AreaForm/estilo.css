@@ -1,0 +1,97 @@
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+.top{
+    display: flex;
+    align-items: stretch;
+}
+.top >div{
+    text-align: center;
+}
+
+
+.logo{
+    width: 15vw;
+    flex-grow: 1;
+    align-items: stretch;
+    display: flex;
+}
+.imga1{
+    width: 70%;
+    height: 80%;
+    margin: auto;
+}
+
+
+.logoNombre{
+    margin: 0vw 0vw 0vw 0vw;
+}
+.nombre{
+    padding-top: 2vw;
+    font-size:2.7vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.titulo{
+    margin-top: 0.4%;
+    width: 60%;
+    flex-grow: 4;
+}
+
+.tituloNombre{
+    height: 4.3vw;
+    font-size: 3.9vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-shadow: 0.3vw 0.3vw 0.3vw rgba(0, 0, 0);
+    background-image: url(Imagenes/titulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*---------------Botones--------------------------*/
+/*------------------------------------------------*/
+
+.boton{
+    display: flex;
+}
+
+.btn{
+    border:none;
+    color:white;
+    text-align:center;
+    font-size: 2.5vw;
+    padding: 0.4vw 1vw 0.4vw 1vw;
+    background-color: darkslateblue;
+    cursor: pointer;
+}
+
+.btnRemove{
+    border:none;
+    color:rgba(0, 0, 0, 0);
+    text-align:center;
+    font-size: 2.5vw;
+    padding: 0.4vw 1vw 0.4vw 1vw;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+/*---------------Figuras--------------------------*/
+/*------------------------------------------------*/
+
+.figuras{
+    height:37vw;
+    width:100%;
+}
