@@ -6,6 +6,10 @@
 let t1 = gsap.timeline();               //Declara una linea de tiempo
 var ficha_x=0,ficha_y=0;                //Guardara la pocicion de la ficha seleccionada
 
+//[Grados,pocicionX, PocicionY]
+//El primer valor tendra los grados que gira la figura, el segundo y el tersero la pocicion inicial en X y en Y
+ //declaramos un arreglo que tendra la informacion de todas las fichas
+
 var fichas = [];                        //declaramos un arreglo que tendra la informacion de todas las fichas
 //[Grados,pocicionX, PocicionY]
 //El primer valor tendra los grados que gira la figura, el segundo y el tersero la pocicion inicial en X y en Y
@@ -105,8 +109,8 @@ Draggable.create( ".fichas", {                //Asignamos la clase de las fichas
         
         let valor = this.target.attributes['data-num'].value;       //Lee el dato de la ficha
         let i = 0;                                                  //declaramos algunas variables
-        let ban = 0;
-        while  ( i < espacios.length  && ban==0)                               //ciclo que recorre los espacios para las fichas
+        let ban = false;
+        while  ( i < espacios.length  && ban==false)                               //ciclo que recorre los espacios para las fichas
         {
 
             if (this.hitTest("." + espacios[i] , overlapThreshold) && espaciosOcupados[i][0] == 0 ){    //si detecta que esta sobre su espacio correspondiente dentro de un % de su area
@@ -126,7 +130,7 @@ Draggable.create( ".fichas", {                //Asignamos la clase de las fichas
                     t1.to(this.target,0,{x: X1 - fichas[valor][1], y: Y1 -fichas[valor][2] });  
                 else
                     t1.to(this.target,0,{x: X1 - fichas[valor][1] + 32 , y: Y1 -fichas[valor][2] -32 }); 
-                ban = 1;                    //activamos la bandera para avisar que la ficha esta en un cuadro
+                ban = true;                    //activamos la bandera para avisar que la ficha esta en un cuadro
             }
             
             i++;
@@ -183,46 +187,15 @@ function getNumero(cadena, num) {               //Funcion encargada de devolver 
  */
 
 function CuadrosOcupados(num,nombre,bar){ 
-    console.log(num);
+    const arreglo = [[4,7],[4,6],[5,8],[1,2],[3,6],[5,2],[8,1],[7,3]]
     let num1=0,num2=0;
-    switch (num) {
-        case 0:
-            num1 = 4;
-            num2 = 7;
-            break;
-        case 1:
-            num1 = 4;
-            num2 = 6;
-            break;
-        case 2:
-            num1 = 5;
-            num2 = 8;
-            break;
-        case 3:
-            num1 = 1;
-            num2 = 2;
-            break;
-        case 4:
-            num1 = 3;
-            num2 = 6;
-            break;
-        case 5:
-            num1 = 5;
-            num2 = 2;
-            break;
-        case 6:
-            num1 = 8;
-            num2 = 1;
-            break;
-        case 7:
-            num1 = 7;
-            num2 = 3;
-            break;
-        default:
-            break;
-    }
-    num1--;
-    num2--;
+
+    console.log(num);
+
+    num1 = arreglo[num][0] - 1;
+    num2 = arreglo[num][1] - 1;
+
+    
     console.log(num1,num2,num)
     if (bar == 1){
         espaciosOcupados[num1][0]++;
