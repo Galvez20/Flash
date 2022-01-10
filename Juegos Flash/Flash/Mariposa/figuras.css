@@ -1,0 +1,183 @@
+
+.figuras{
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.fig1{
+    background-image: url('Imagenes/fig1.png');
+
+    width: 13.6vw;   
+    height: 9.3vw;
+
+    top: 12vw;
+    left: 11vw;
+    clip-path: polygon(89% 66%, 99% 98%, 0 98%, 0 2%);
+}
+
+.fig2{
+    background-image: url('Imagenes/fig2.png');
+    
+    width: 12.3vw;   
+    height: 14.6vw;
+
+    top: 23vw;
+    left: 27vw;
+    clip-path: polygon(60% 31%, 99% 98%, 0 57%, 1% 0);
+}
+.fig3{
+    background-image: url('Imagenes/fig3.png');
+    
+    width: 19.3vw;   
+    height: 12.6vw;
+
+    top: 30vw;
+    left: 10vw;
+    clip-path: polygon(1% 0, 33% 100%, 100% 99%);
+}
+.fig4{
+    background-image: url('Imagenes/fig4.png');
+    
+    width: 17vw;   
+    height: 11.6vw;
+
+    top: 14vw;
+    left: 20vw;
+
+    clip-path: polygon(0 3%, 100% 0, 100% 100%);
+}
+
+.fig5{
+    background-image: url('Imagenes/fig5.png');
+    
+    width: 17vw;   
+    height: 6.6vw;
+
+    top: 22vw;
+    left: 10vw;
+
+    clip-path: polygon(37% 5%, 100% 4%, 100% 99%, 0 100%, 0 45%);
+}
+
+.fig6{
+    background-image: url('Imagenes/fig6.png');
+    
+    width: 16vw;   
+    height: 6.3vw;
+
+    top: 29vw;
+    left: 10vw;
+
+    clip-path: polygon(0 0, 100% 0, 61% 45%, 61% 100%);
+}
+
+
+
+
+
+
+.figBase1{
+    background-color:chocolate;
+    background-image: url('Imagenes/fig1.png');
+    width: 13.6vw;   
+    height: 9.3vw;
+
+    top: 26vw;
+    left: 55vw;
+    clip-path: polygon(1% 3%, 88% 66%, 99% 98%, 1% 97%);
+}
+
+.figBase2{
+    background-color:crimson;
+    background-image: url('Imagenes/fig2.png');
+    width: 12.3vw;   
+    height: 14.6vw;
+
+    top: 18vw;
+    left: 54.9vw;
+    clip-path: polygon(2% 1%, 59% 32%, 99% 97%, 2% 57%);
+
+}
+.figBase3{
+    background-color:lawngreen;
+    background-image: url('Imagenes/fig3.png');
+    width: 19.3vw;   
+    height: 12.8vw;
+
+    top: 22.5vw;
+    left: 62vw;
+    clip-path: polygon(1% 0, 33% 99%, 100% 99%);
+}
+.figBase4{
+    background-color:forestgreen;
+    background-image: url('Imagenes/fig4.png');
+    width: 17vw;   
+    height: 11.6vw;
+
+    top: 23.8vw;
+    left: 64.5vw;
+
+    clip-path: polygon(99% 3%, 0 3%, 99% 98%);
+}
+
+.figBase5{
+    background-color:mediumblue;
+    background-image: url('Imagenes/fig5.png');
+    width: 17vw;   
+    height: 6.6vw;
+
+    top: 17.9vw;
+    left: 64.4vw;
+
+    clip-path: polygon(38% 4%, 99% 4%, 99% 95%, 1% 97%, 1% 45%);
+}
+
+.figBase6{
+    background-color:darkcyan;
+    background-image: url('Imagenes/fig6.png');
+    width: 16vw;   
+    height: 6.3vw;
+
+    top: 18.1vw;
+    left: 55.1vw;
+
+    clip-path: polygon(0 0, 100% 0, 61% 45%, 61% 100%);
+}
+
+
+
+/*
+
+
+.fig3{
+    background: green;
+
+    top: 30vw;
+    left: 80vw;
+    clip-path: path('m61.95378,2.5l77.11339,70.43538l-104.47761,67.91045l-32.08956,-82.83582l59.45378,-55.51001z');
+}
+.fig4{
+    background: green;
+
+    top: 30vw;
+    left: 80vw;
+    clip-path: path('m61.95378,2.5l77.11339,70.43538l-104.47761,67.91045l-32.08956,-82.83582l59.45378,-55.51001z');
+}
+.fig5{
+    background: green;
+
+    top: 30vw;
+    left: 80vw;
+    clip-path: path('m61.95378,2.5l77.11339,70.43538l-104.47761,67.91045l-32.08956,-82.83582l59.45378,-55.51001z');
+}
+.fig6{
+    background: green;
+
+    top: 30vw;
+    left: 80vw;
+    clip-path: path('m61.95378,2.5l77.11339,70.43538l-104.47761,67.91045l-32.08956,-82.83582l59.45378,-55.51001z');
+}
+*/

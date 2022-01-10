@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="figuras.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.10/pixi.min.js"></script>
+
+    <title>Contar Cuadros</title>
+  </head>
+    <body>
+        <!-- Div donde estara la parte superior de la pagina  -->
+        <div class="top">
+            <div class="logo">
+                <img class="imga1" src="Imagenes/logo.png">
+            </div>
+            <div class="titulo">
+                <h3>Mi ayudante. Auxiliar did&aacute;ctico de matemáticas</h3>
+                    <h1 class="tituloNombre">Figura oculta</h1>
+            </div>
+            <div class="logo">
+                <img class="imga2" src="Imagenes/miaylogo.jpg">
+            </div>
+        </div>
+
+
+
+        <div class="fondoGanar back" id="youWin">
+            <p class="textoFinal">¡Lo lograstes!</p>
+        </div>
+
+        <div class="cuerpo">
+            <div class="Instrucciones">
+                <p>Haz clic sobre las figuras y arrastra las piezas al rectangulo y descubre la figura que se forma. Si colocas la pieza en el lugar correcto no se movera más y cambiará de colo</p>
+            </div>
+            <div class="juego">
+
+                <div class="figurasMov figuras fig1" id="fig1"></div>
+                <div class="figurasMov figuras fig2" id="fig2"></div>
+                <div class="figurasMov figuras fig3" id="fig3"></div>
+                <div class="figurasMov figuras fig4" id="fig4"></div>
+                <div class="figurasMov figuras fig5" id="fig5"></div>
+                <div class="figurasMov figuras fig6" id="fig6"></div>
+
+                <div class="figuras figBase1" id="figBase1"></div>
+                <div class="figuras figBase2" id="figBase2"></div>
+                <div class="figuras figBase3" id="figBase3"></div>
+                <div class="figuras figBase4" id="figBase4"></div>
+                <div class="figuras figBase5" id="figBase5"></div>
+                <div class="figuras figBase6" id="figBase6"></div>
+
+            </div>
+            <p style=" margin-left:1vw; font-size: 1.5vw;" id="PuntajeJuego1">Buenas: </p>
+        </div>
+
+        <script src="script.js"></script>
+        
+    </body>
+</html>
