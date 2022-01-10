@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(255, 255, 255);
+    color: #0045c5;
+    color: rgb(0, 0, 0);
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+.top{
+    display: flex;
+    align-items: stretch;
+
+}
+
+.top >div{
+
+    text-align: center;
+}
+
+.logo{
+
+    width: 20%;
+    flex-grow: 1;
+    align-items: stretch;
+    display: flex;
+}
+
+.imga1{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+}
+
+.imga2{
+    
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+
+.titulo{
+    margin-top: 0.4%;
+    width: 60%;
+    flex-grow: 4;
+}
+.titulo >h3{
+    font-size: 1.9vw;
+}
+.tituloNombre{
+    font-size: 2.9vw;
+    color: rgb(1, 36, 59);
+    background-image: url(Imagenes/titulo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------*/
+/*-------------------------------------------------------*/
+
+.cuerpo{
+    margin: auto;
+    width: 55%;
+    padding: 4vw 0 0 0;
+    display: flex;
+}
+p{
+    color:rgb(0, 81, 255);
+    margin: 1vw 0 0 0;
+    font-variant: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4vw;
+}
+
+
+.instrucciones{
+    position: absolute;
+    width: 30vw;
+    z-index: -1;
+    color: rgb(0, 81, 255);
+    background-color: rgb(255, 255, 255);
+    
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: bold;
+    font-size: 1.3vw;
+}
+
+.hardtext{
+    font-size: 1.7vw;
+}
+
+.instrucciones > p{
+
+}
+
+
+
+
+
+
+
+.botonReinicio{
+    position: relative;
+    top: 30vw;
+    left: 80vw;
+
+    width: 10vw;
+    height: 8vw;
+    font-size: 2.2vw;
+    color:rgb(255, 255, 255);
+
+    border: none;
+
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url(Imagenes/flecha_Boton.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 10vw 8vw;
+
+}
+
+
+.fondoGanar{
+    position: absolute;
+    
+
+    background-image: url(Imagenes/fondo-fin.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 94vw 40vw;
+
+    width: 100vw;
+    height: 40.5vw;
+
+}
+.back{
+    z-index: -1;
+}
+
+.front{
+    z-index: 2;
+}
+
+.textoFinal{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #000000;
+    
+    width: 40vw;
+    position: relative;
+    top: 10vw;
+    left: 30vw;
+    font-size: 6vw;
+}
+
+
+    /* Cubre toda la pantalla del dispositivo */
+    .mensaje {
+        position: fixed;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+          
+          /* Con esto ajustamos la posición del texto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          
+          /* Un color de fondo */
+          
+        background-color: white;
+          /* Debemos superponerlo */
+        z-index: 1000;
+    }
+        
+        /* El texto que vamos a mostrar */
+    .mensaje::before {
+        content: "Voltee su dispositivo";
+        font-size: 2rem;
+    }
+    
+    @media screen and (orientation: portrait ) {
+        .app {
+          display: none;
+        }
+    }

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/Draggable.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/PixiPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.3.10/pixi.min.js"></script>
+
+    <title>Contar Cuadros</title>
+  </head>
+    <body>
+        <!-- Div donde estara la parte superior de la pagina  -->
+        <div class="top">
+            <div class="logo">
+                <img class="imga1" src="Imagenes/logo.png">
+            </div>
+            <div class="titulo">
+                <h3>Mi ayudante. Auxiliar did&aacute;ctico de matemáticas</h3>
+                    <h1 class="tituloNombre">¿Cuántos cuadritos tiene la cruz?</h1>
+            </div>
+            <div class="logo">
+                <img class="imga2" src="Imagenes/miaylogo.jpg">
+            </div>
+        </div>
+
+
+        <div class="fondoGanar back" id="youWin">
+            <button class='botonReinicio' id="reiniciarJuego"> Reiniciar </button>
+            <p class="textoFinal">¡Lo lograstes!</p>
+        </div>
+        <div class="cuerpo">
+            <div class="cuadro">
+                <div class="Instrucciones">
+                    <p>1.- Observa la figura de abajo, y colocando los números n los cuadritos de colores de la izquierda indica que 1 al 4, que figura tiene mas cuadritos</p>
+                    <p>El que tiene mas cuadritos sera el numero '1'. el que le sigue el "2", hasta llegar al "4"</p>
+                </div>
+                <div class="juego1">
+                    <svg  viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="svg1">
+                        <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+                        <title>Layer 1</title>
+
+                        <rect fill="#ffe602" height="350.50505" id="svg_6" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2" width="629.96314" x="150.33989" y="89.89899"/>
+                        <path d="m150.41841,300l68.82845,0l0.46948,70.1603l140.16737,-0.00001l0.46948,70.21136l-209.79316,-0.74693" fill="#003fd9" id="svg_4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                        <path d="m779.55764,300.33512l-139.47721,-0.33512l0,69.70509l-69.97319,0.67025c0,0 -0.33512,69.10187 -0.33512,69.10187c0,0 210.05362,0.2681 210.05362,0.2681" fill="#00c6f4" id="svg_5" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                        <rect fill="#009900" height="139.37303" id="svg_26" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2" width="139.31348" x="640.63361" y="90.08532"/>
+                        <path d="m430.24557,159.85641c0,0 70.0064,0.02263 70.1157,0.02263l-0.24123,69.43344c0,0 70.09307,0.13192 70.10495,0.10814l0.29723,70.22037l-70.39029,0.55497l-0.01189,69.8424l-70.14908,-0.16388l-0.24122,-70.1836l-69.39203,0.37315l-0.92348,-70.48885c-1.96702,-0.09985 70.83134,0.23178 70.83134,0.23178" fill="#9900ff" id="svg_3" stroke="#000000" stroke-opacity="0" stroke-width="5"/>
+                        <rect fill="#ff3266" height="138.92886" id="svg_25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2" width="209.16318" x="149.96589" y="90.59942"/>
+                        <g class="layer" id="svg_1"/>
+                        <rect fill="#000000" fill-opacity="0" height="350" id="svg_2" stroke="#000000" stroke-width="2" width="630" x="150" y="90"/>
+                        <line fill="none" fill-opacity="0" id="svg_11" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="220" x2="220" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_13" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="290" x2="290" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_15" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="360" x2="360" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="430" x2="430" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_17" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="500" x2="500" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_18" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="570" x2="570" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_19" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="640" x2="640" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_20" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="710" x2="710" y1="90" y2="440"/>
+                        <line fill="none" fill-opacity="0" id="svg_21" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="150" x2="780" y1="160" y2="160"/>
+                        <line fill="none" fill-opacity="0" id="svg_22" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="150" x2="780" y1="230" y2="230"/>
+                        <line fill="none" fill-opacity="0" id="svg_23" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="150" x2="780" y1="300" y2="300"/>
+                        <line fill="none" fill-opacity="0" id="svg_24" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" x1="150" x2="780" y1="370" y2="370"/>
+                        <ellipse cx="216.70811" cy="30.1247" fill="#ffffff" fill-opacity="0" id="svg_46" rx="0" ry="0.18553" stroke="#000000" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="3"/>
+                        
+
+
+                        <rect fill="#ff3266" height="51" id="svg_34" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="51" x="41" y="150"/>
+                        <rect fill="#003fd9" height="51" id="svg_35" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="51" x="41" y="90.70001"/>
+                        <rect fill="#9900ff" height="51" id="svg_36" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="51" x="41" y="210"/>
+                        <rect fill="#ffe600" height="51" id="svg_37" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="51" x="41" y="270"/>
+                        <rect fill="#009900" height="51" id="svg_38" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="51" x="41" y="330"/>
+                        <rect fill="#00c6f4" height="51" id="svg_39" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="2" width="51" x="41" y="390"/>
+                        
+                        <path class="amarillo1" d="m58.20191,288.32624c9.2476,-3.55147 11.44367,-11.26426 11.44367,-11.26426c0,0 0.15794,35.17063 0.15794,37.15206" fill="#000000" fill-opacity="0" id="amarillo1" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                        <path class="rojo2" d="m54.28383,168.39478c4.95586,-10.503 12.74505,-8.19953 15.87165,-6.34525c3.12661,1.85429 3.80665,6.81016 1.51003,10.50353c-2.29661,3.69336 -17.62173,17.28949 -16.67,17.95179c0.95171,0.6623 13.68942,0.30044 20.93215,0.19262" fill="#000000" fill-opacity="0" id="rojo2" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5"/>
+                        <path class="morado3" d="m58.99555,220.61968c1.85994,-3.71913 13.94071,-4.28542 13.96042,3.02044c0.01972,7.30587 -12.15141,10.01535 -11.99976,11.2881c0.15165,1.27274 13.13081,-1.461 13.42874,7.69931c0.29792,9.16031 -12.42313,11.88004 -14.9452,7.38506" fill="#000000" fill-opacity="0" id="morado3" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5"/>
+                        <path class="AzulC3" d="m59.66422,401.59528c1.85994,-3.71913 13.94071,-4.28542 13.96042,3.02044c0.01972,7.30587 -12.15141,10.01535 -11.99976,11.2881c0.15165,1.27274 13.13081,-1.461 13.42874,7.69931c0.29792,9.16031 -12.42313,11.88004 -14.9452,7.38506" fill="#000000" fill-opacity="0" id="AzulC4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="null" stroke-width="5"/>
+                        <path class="Azul4" d="m71.18223,137.48567l-0.30798,-41.32726l-18.74837,24.47184l26.89433,-0.22018" fill="#000000" fill-opacity="0" id="Azul4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                        <path class="verde4" d="m70.54155,376.42113l-0.30798,-41.32726l-18.74837,24.47184l26.89433,-0.22018" fill="#000000" fill-opacity="0" id="verde4" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+                        <path class="Paloma1" d="m144.15196,90.43894l-29.53123,38.0402l-18.89006,-2.2868l21.03144,15.62941l27.38986,-51.3828l-0.00001,-0.00001z" fill="#f2c00e" id="Paloma1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="Paloma2" d="m144.89057,148.76577l-29.53123,38.0402l-18.89006,-2.2868l21.03144,15.62941l27.38986,-51.3828l-0.00001,-0.00001z" fill="#f2c00e" id="Paloma2" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="Paloma3" d="m143.95161,210.31076l-29.53123,38.0402l-18.89006,-2.2868l21.03144,15.62941l27.38986,-51.3828l-0.00001,-0.00001z" fill="#f2c00e" id="Paloma3" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="Paloma4" d="m144.65583,268.74015l-29.53123,38.0402l-18.89006,-2.2868l21.03144,15.62941l27.38986,-51.3828l-0.00001,-0.00001z" fill="#f2c00e" id="Paloma4" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="Paloma5" d="m144.18635,331.62957l-29.53123,38.0402l-18.89006,-2.2868l21.03144,15.62941l27.38986,-51.3828l-0.00001,-0.00001z" fill="#f2c00e" id="Paloma5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="Paloma6" d="m144.18635,388.47977l-29.53123,38.0402l-18.89006,-2.2868l21.03144,15.62941l27.38986,-51.3828l-0.00001,-0.00001z" fill="#f2c00e" id="Paloma6" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+
+                        <g id="num1" class="numero" data-num="1" > 
+                            <ellipse cx="181.90777" cy="51.00693" fill="#043063" id="svg_7" rx="28.41858" ry="26.794" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <text fill="#ffffff" font-family="Sans-serif" font-size="47" font-weight="bold" id="svg_51" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="0" text-anchor="middle" x="181.26307" xml:space="preserve" y="67.29167">1</text>
+                            <rect fill="#000000" fill-opacity="0" height="51.72385" id="svg_8" stroke="#000000" stroke-opacity="0" stroke-width="5" width="54.48954" x="154.17364" y="24.59456"/>
+                        </g>
+                        <g id="num2" class="numero" data-num="2" >
+                            <ellipse cx="246.8124" cy="50.48471" fill="#043063" id="svg_28" rx="28.41858" ry="26.794" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <text fill="#ffffff" font-family="Sans-serif" font-size="47" font-weight="bold" id="svg_50" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="0" text-anchor="middle" x="246.76698" xml:space="preserve" y="66.01517">2</text>
+                            <rect fill="#000000" fill-opacity="0" height="51.72385" id="svg_10" stroke="#000000" stroke-opacity="0" stroke-width="5" width="54.48954" x="219.03136" y="24.30545"/>
+                        </g>
+                        <g id="num3-1" class="numero" data-num="3" >
+                            <ellipse cx="308.71937" cy="51.14477" fill="#043063" id="svg_29" rx="28.41858" ry="26.794" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <text fill="#ffffff" font-family="Sans-serif" font-size="52" font-style="normal" font-weight="bold" id="svg_43" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="0" text-anchor="middle" x="309.25641" xml:space="preserve" y="68.57339">3</text>
+                            <rect fill="#000000" fill-opacity="0" height="51.72385" id="svg_12" stroke="#000000" stroke-opacity="0" stroke-width="5" width="54.48954" x="281.70916" y="25.22593"/>
+                        </g>
+                        <g id="num3-2" class="numero" data-num="3" >
+                            <ellipse cx="372.1218" cy="50.60589" fill="#043063" id="svg_30" rx="28.41858" ry="26.794" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <text fill="#ffffff" font-family="Sans-serif" font-size="47" font-weight="bold" id="svg_52" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="0" text-anchor="middle" x="371.99282" xml:space="preserve" y="66.6186">3</text>
+                            <rect fill="#000000" fill-opacity="0" height="51.72385" id="svg_14" stroke="#000000" stroke-opacity="0" stroke-width="5" width="54.48954" x="344.47067" y="25.22593"/>
+                        </g>
+                        <g id="num4-1" class="numero" data-num="4" >
+                            <ellipse cx="435.67894" cy="53.00379" fill="#043063" id="svg_31" rx="28.41858" ry="26.794" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <text fill="#ffffff" font-family="Sans-serif" font-size="47" font-weight="bold" id="svg_53" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="0" text-anchor="middle" x="433.12017" xml:space="preserve" y="67.05622">4</text>
+                            <rect fill="#000000" fill-opacity="0" height="51.72385" id="svg_27" stroke="#000000" stroke-opacity="0" stroke-width="5" width="54.48954" x="408.48741" y="28.1548"/>
+                        </g>
+                        <g id="num4-2" class="numero" data-num="4" >
+                            <ellipse cx="497.88243" cy="52.79494" fill="#043063" id="svg_32" rx="28.41858" ry="26.794" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <text fill="#ffffff" font-family="Sans-serif" font-size="47" font-weight="bold" id="svg_54" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="0" text-anchor="middle" x="496.11867" xml:space="preserve" y="67.82824">4</text>
+                            <rect fill="#000000" fill-opacity="0" height="51.72385" id="svg_33" stroke="#000000" stroke-opacity="0" stroke-width="5" width="54.48954" x="470.52138" y="26.63572"/>
+                        </g>
+                    </svg>
+                </div>
+                <p style=" margin-left:1vw; font-size: 1.5vw;" id="PuntajeJuego1">Buenas: </p>
+            </div>
+
+
+
+
+
+
+
+
+            <div class='cuadro'>
+                <div class="Instrucciones">
+                    <p>2.- Reproduce el mosaico de la izquierda, haciendo click y arrastrando los colores sobre los cuadros amarillos</p>
+                    
+                </div>
+
+                <div class="juego2">
+                    <div class="grupo">
+                        <p style='width:45%'>Prueba tu velocidad utilizando el cronometro</p>
+                        <div style="width:55%">
+                            <div class="cronometro" id="crono"></div>
+                            <div class="Botones">    
+                                <button class="boton" id="Inicio">Inicio</button>
+                                <button class="boton" id="Alto">Alto</button>
+                                <button class="boton" id="Reset">Reset</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="svg2">
+                    <svg viewBox='0 0 675 450' xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+                        <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+
+
+                        <g class="layer">
+                            <title>Layer 1</title>
+                            
+                            <rect fill="#ffe0a3" data-cuador="0" class='rojo' height="69.87324" id="R1"  stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="27.76491" y="81.68683"/>
+                            <rect fill="#ffe0a3" data-cuador="1" class='rojo' height="69.87324" id="R2" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="97.20124" y="81.65858"/>
+                            <rect fill="#ffe0a3" data-cuador="9" class='rojo' height="69.87324" id="R3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="27.67888" y="152.19978"/>
+                            <rect fill="#ffe0a3" data-cuador="10" class='rojo' height="69.87324" id="R4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="97.16857" y="152.12487"/>
+                            <rect fill="#ffe0a3" data-cuador="18" class='amarillo' height="69.87324" id="A1" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="27.69408" y="222.60462"/>
+                            <rect fill="#ffe0a3" data-cuador="19" class='amarillo' height="69.87324" id="A2" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="97.18377" y="222.52971"/>
+                            <rect fill="#ffe0a3" data-cuador="27" class='azul' height="69.87324" id="AB1" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="27.54707" y="292.59848"/>
+                            <rect fill="#ffe0a3" data-cuador="28" class='amarillo' height="69.87324" id="A3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="97.21565" y="292.56558"/>
+                            <rect fill="#ffe0a3" data-cuador="36" class='azul' height="69.87324" id="AB2" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="27.79999" y="363.10678"/>
+                            <rect fill="#ffe0a3" data-cuador="37" class='azul' height="69.87324" id="AB3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="97.28968" y="363.03187"/>
+                            <rect fill="#ffe0a3" data-cuador="2" class='rojo' height="69.87324" id="R5" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="167.01951" y="81.63588"/>
+                            <rect fill="#ffe0a3" data-cuador="3" class='amarillo' height="69.87324" id="A4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="236.84837" y="81.56097"/>
+                            <rect fill="#ffe0a3" data-cuador="11" class='rojo' height="69.87324" id="R6" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="166.33596" y="152.10217"/>
+                            <rect fill="#ffe0a3" data-cuador="12" class='amarillo' height="69.87324" id="A5" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="235.82565" y="152.02726"/>
+                            <rect fill="#ffe0a3" data-cuador="20" class='amarillo' height="69.87324" id="A6" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="166.35117" y="222.50701"/>
+                            <rect fill="#ffe0a3" data-cuador="21" class='morado' height="69.87324" id="M1" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="235.84086" y="222.4321"/>
+                            <rect fill="#ffe0a3" data-cuador="29" class='amarillo' height="69.87324" id="A7" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="166.38304" y="292.54288"/>
+                            <rect fill="#ffe0a3" data-cuador="30" class='amarillo' height="69.87324" id="A8" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="235.87273" y="292.46797"/>
+                            <rect fill="#ffe0a3" data-cuador="38" class='azul' height="69.87324" id="AB4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="166.45707" y="363.00917"/>
+                            <rect fill="#ffe0a3" data-cuador="39" class='amarillo' height="69.87324" id="A9" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="235.94676" y="362.93426"/>
+                            <rect fill="#ffe0a3" data-cuador="4" class='amarillo' height="69.87324" id="A10" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="305.3128" y="81.62261"/>
+                            <rect fill="#ffe0a3" data-cuador="5" class='amarillo' height="69.87324" id="A11" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="374.8025" y="81.5477"/>
+                            <rect fill="#ffe0a3" data-cuador="13" class='morado' height="69.87324" id="M2" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="305.38684" y="152.08891"/>
+                            <rect fill="#ffe0a3" data-cuador="14" class='amarillo' height="69.87324" id="A12" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="374.87653" y="152.01399"/>
+                            <rect fill="#ffe0a3" data-cuador="22" class='morado' height="69.87324" id="M3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="305.40204" y="222.49374"/>
+                            <rect fill="#ffe0a3" data-cuador="23" class='morado' height="69.87324" id="M4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="374.89173" y="222.41883"/>
+                            <rect fill="#ffe0a3" data-cuador="31" class='morado' height="69.87324" id="M5" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="305.43391" y="292.52961"/>
+                            <rect fill="#ffe0a3" data-cuador="32" class='amarillo' height="69.87324" id="A13" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="374.9236" y="292.4547"/>
+                            <rect fill="#ffe0a3" data-cuador="40" class='amarillo' height="69.87324" id="A14" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="305.50794" y="362.9959"/>
+                            <rect fill="#ffe0a3" data-cuador="41" class='amarillo' height="69.87324" id="A15" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="374.99763" y="362.92099"/>
+                            <rect fill="#ffe0a3" data-cuador="6" class='amarillo' height="69.87324" id="A16" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="444.28734" y="81.5304"/>
+                            <rect fill="#ffe0a3" data-cuador="7" class='verde' height="69.87324" id="V1" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="513.77703" y="81.45549"/>
+                            <rect fill="#ffe0a3" data-cuador="15" class='amarillo' height="69.87324" id="A17" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="444.36137" y="151.99669"/>
+                            <rect fill="#ffe0a3" data-cuador="16" class='verde' height="69.87324" id="V2" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="513.6124" y="152.11886"/>
+                            <rect fill="#ffe0a3" data-cuador="24" class='amarillo' height="69.87324" id="A18" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="444.37657" y="222.40153"/>
+                            <rect fill="#ffe0a3" data-cuador="25" class='amarillo' height="69.87324" id="A19" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="513.86626" y="222.32662"/>
+                            <rect fill="#ffe0a3" data-cuador="33" class='amarillo' height="69.87324" id="A20" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="444.40844" y="292.43739"/>
+                            <rect fill="#ffe0a3" data-cuador="34" class='celeste' height="69.87324" id="Ac1" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="513.89813" y="292.36249"/>
+                            <rect fill="#ffe0a3" data-cuador="42" class='celeste' height="69.87324" id="Ac2" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="444.48247" y="362.90369"/>
+                            <rect fill="#ffe0a3" data-cuador="43" class='celeste' height="69.87324" id="Ac3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="513.97216" y="362.82878"/>
+                            <rect fill="#ffe0a3" data-cuador="8" class='verde' height="69.87324" id="V3" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="583.34872" y="81.47501"/>
+                            <rect fill="#ffe0a3" data-cuador="17" class='verde' height="69.87324" id="V4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="583.42275" y="151.9413"/>
+                            <rect fill="#ffe0a3" data-cuador="26" class='amarillo' height="69.87324" id="A21" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="583.43795" y="222.34613"/>
+                            <rect fill="#ffe0a3" data-cuador="35" class='celeste' height="69.87324" id="Ac4" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="583.46982" y="292.382"/>
+                            <rect fill="#ffe0a3" data-cuador="44" class='celeste' height="69.87324" id="Ac5" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" width="69.11972" x="583.54386" y="362.8483"/>
+                            
+                            <ellipse cx="325" cy="49" fill="#ff3266" id="svg_6" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse cx="270" cy="49" fill="#9900ff" id="svg_5" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse cx="215" cy="49" fill="#003fd9" id="svg_4" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse cx="160" cy="49" fill="#00c6f4" id="svg_3" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse cx="105" cy="49" fill="#009900" id="svg_2" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse cx="50" cy="49" fill="#ffe600" id="svg_1" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            
+                            <ellipse class="Mover" cx="50" cy="48" fill="#ffe600" data-num='0' id="amarillo" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse class="Mover" cx="105" cy="48" fill="#009900" data-num='1' id="verde" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse class="Mover" cx="160" cy="48" fill="#00c6f4" data-num='2' id="celeste" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse class="Mover" cx="215" cy="48" fill="#003fd9" data-num='3' id="azul" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse class="Mover" cx="270" cy="48" fill="#9900ff" data-num='4' id="morado" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                            <ellipse class="Mover" cx="325" cy="48" fill="#ff3266" data-num='5' id="rojo" rx="25" ry="25" stroke="#000000" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-opacity="0" stroke-width="2"/>
+                        
+                        </g>
+                    </svg>
+                    </div>
+                </div>
+                <p style=" margin-left:1vw; font-size: 1.5vw;" id="PuntajeJuego2">Buenas: </p>
+            </div>
+        </div>
+        <script src="NCuadros.js"></script>
+        <script>
+
+            let mensaje = document.getElementById('mensaje');
+  
+            window.mobileCheck = function() {
+            let check = false;
+                (function(a)
+                {if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) 
+                    check = true;
+                })(navigator.userAgent||navigator.vendor||window.opera);
+                return check;
+            };
+  
+            if (screen.width > screen.height) {
+                if (window.mobileCheck()) { 
+                    mensaje.classList.remove("mensaje");
+                };
+            } else {
+                mensaje.classList.add("mensaje");
+            }
+  
+            window.onresize = () => {
+                if (screen.width > screen.height) {
+                    if (window.mobileCheck()) {
+                        mensaje.classList.remove("mensaje");
+                    };
+                } else {
+                    mensaje.classList.add("mensaje");
+                }
+            };
+  
+        </script>
+        
+    </body>
+</html>
