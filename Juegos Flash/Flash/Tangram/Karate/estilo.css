@@ -1,0 +1,120 @@
+.cuerpo{
+    margin: 0 0.5% 0 0.5%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(Imagenes/fondo-paisaje.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.instrucciones{
+    
+    color:rgb(4, 51, 153);
+    padding:0.5% 0 0.5% 0;
+    
+    text-align: center;
+    font-family: cursive;
+    font-size: 1.9vw;
+}
+
+.figuras{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    background-image: url(Imagenes/boton1.png);
+    background-size: 12vw 35vw;
+    background-repeat: no-repeat;
+    background-position: center;
+
+
+    margin: 0 5vw 0 0;
+    height: 35vw;
+    width: 15vw;
+
+    border-color:rgba(95, 37, 37, 0);
+    color: rgb(87, 28, 184);
+    font-family: cursive;
+    background-color: rgba(220, 130, 13, 0);
+    /*padding: 17px 34px;*/
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    letter-spacing: -0.5px;
+    font-size: 2.7vw;
+    cursor: pointer;
+}
+.boton-div{
+    padding: 0 1% 0 0;
+    height: 10vw;
+    width: 20vw;
+
+}
+
+
+.boton:hover{
+    background-image: url(Imagenes/boton2.png);
+}
+
+
+.conteo{
+    position: absolute;
+    display: flex;
+    color: rgb(4, 51, 153);
+    font-size: 4vw;
+    font-family: cursive;
+    justify-content: center;
+}
+
+.conteobuenas{
+
+    left: 10vw;
+    top: 40vw;
+    z-index: 1;
+
+}
+.felicitaciones{
+    
+    left: 43vw;
+    top: 20vw;
+    z-index: 1;
+
+}
+
+
+
+    /* Cubre toda la pantalla del dispositivo */
+    .mensaje {
+        position: fixed;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+          
+          /* Con esto ajustamos la posición del texto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+          
+          /* Un color de fondo */
+          
+        background-color: white;
+          /* Debemos superponerlo */
+        z-index: 1000;
+    }
+        
+        /* El texto que vamos a mostrar */
+    .mensaje::before {
+        content: "Voltee su dispositivo";
+        font-size: 2rem;
+    }
+    
+    @media screen and (orientation: portrait ) {
+        .app {
+          display: none;
+        }
+    }
