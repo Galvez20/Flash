@@ -1,0 +1,6 @@
+/*Este archivo contendra los 5 numeros para los ejercicios de numeros babilonicos*/
+B|13;
+D|213;
+B|2133;
+B|750;
+D|1354;

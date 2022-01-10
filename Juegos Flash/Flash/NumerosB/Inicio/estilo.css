@@ -1,0 +1,77 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+body{
+    color:#2e2e2e;
+    background-color: rgb(255, 255, 255);
+}
+
+
+.top{
+    background-image: url("FondoTop.png");
+    background-size: 260px 130px;
+    color:black;
+    padding: 2.5% 0 2.5% 100px;
+}
+.top > p{
+    font-family: "Sofia", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.cuerpo{
+    position: relative;
+    margin: auto;
+    width:900px;
+    padding: 15px;
+    padding-top: 30px;
+    background-color: rgb(243, 238, 218);
+
+    line-height: 1.5;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.descripcion{
+    margin: auto;
+}
+
+.ejemplos{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 10px;
+    max-width: 100%;
+    width: 640px;
+    height: auto;    
+}
+
+
+.botonGroup{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.boton{
+    border:none;
+    border-left: 0.5em solid rgb(65, 24, 12);
+
+    background-color: #aa5b1f;
+    color: rgb(255, 255, 255);
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;   
+
+    width: 48%;
+}
+
+.boton:hover {
+    background-color: #924d17;
+}

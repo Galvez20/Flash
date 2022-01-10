@@ -1,0 +1,6 @@
+/*Este archivo contendra los 5 numeros para los ejercicios de los numeros decimales*/
+1|50;
+2|123;
+3|1334;
+4|1233;
+5|1233;

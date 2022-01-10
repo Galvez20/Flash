@@ -1,0 +1,245 @@
+.img1{
+    background-image: url("Imagenes/num1.png");
+}
+.img2{
+    background-image: url("Imagenes/num2.png");
+}
+.img3{
+    background-image: url("Imagenes/num3.png");
+}
+.img4{
+    background-image: url("Imagenes/num4.png");
+}
+.img5{
+    background-image: url("Imagenes/num5.png");
+}
+.img6{
+    background-image: url("Imagenes/num6.png");
+}
+.img7{
+    background-image: url("Imagenes/num7.png");
+}
+.img8{
+    background-image: url("Imagenes/num8.png");
+}
+.img9{
+    background-image: url("Imagenes/num9.png");
+}
+.img10{
+    background-image: url("Imagenes/num10.png");
+}
+.img11{
+    background-image: url("Imagenes/num11.png");
+}
+.img12{
+    background-image: url("Imagenes/num12.png");
+}
+.img13{
+    background-image: url("Imagenes/num13.png");
+}
+.img14{
+    background-image: url("Imagenes/num14.png");
+}
+.img15{
+    background-image: url("Imagenes/num15.png");
+}
+.img16{
+    background-image: url("Imagenes/num16.png");
+}
+.img17{
+    background-image: url("Imagenes/num17.png");
+}
+.img18{
+    background-image: url("Imagenes/num18.png");
+}
+.img19{
+    background-image: url("Imagenes/num19.png");
+}
+.img20{
+    background-image: url("Imagenes/num20.png");
+}
+.img21{
+    background-image: url("Imagenes/num21.png");
+}
+.img22{
+    background-image: url("Imagenes/num22.png");
+}
+.img23{
+    background-image: url("Imagenes/num23.png");
+}
+.img24{
+    background-image: url("Imagenes/num24.png");
+}
+.img25{
+    background-image: url("Imagenes/num25.png");
+}
+.img26{
+    background-image: url("Imagenes/num26.png");
+}
+.img27{
+    background-image: url("Imagenes/num27.png");
+}
+.img28{
+    background-image: url("Imagenes/num28.png");
+}
+.img29{
+    background-image: url("Imagenes/num29.png");
+}
+.img30{
+    background-image: url("Imagenes/num30.png");
+}
+.img31{
+    background-image: url("Imagenes/num31.png");
+}
+.img32{
+    background-image: url("Imagenes/num32.png");
+}
+.img33{
+    background-image: url("Imagenes/num33.png");
+}
+.img34{
+    background-image: url("Imagenes/num34.png");
+}
+.img35{
+    background-image: url("Imagenes/num35.png");
+}
+.img36{
+    background-image: url("Imagenes/num36.png");
+}
+.img37{
+    background-image: url("Imagenes/num37.png");
+}
+.img38{
+    background-image: url("Imagenes/num38.png");
+}
+.img39{
+    background-image: url("Imagenes/num39.png");
+}
+.img40{
+    background-image: url("Imagenes/num40.png");
+}
+.img41{
+    background-image: url("Imagenes/num41.png");
+}
+.img42{
+    background-image: url("Imagenes/num42.png");
+}
+.img43{
+    background-image: url("Imagenes/num43.png");
+}
+.img44{
+    background-image: url("Imagenes/num44.png");
+}
+.img45{
+    background-image: url("Imagenes/num45.png");
+}
+.img46{
+    background-image: url("Imagenes/num46.png");
+}
+.img47{
+    background-image: url("Imagenes/num47.png");
+}
+.img48{
+    background-image: url("Imagenes/num48.png");
+}
+.img49{
+    background-image: url("Imagenes/num49.png");
+}
+.img50{
+    background-image: url("Imagenes/num50.png");
+}
+.img51{
+    background-image: url("Imagenes/num51.png");
+}
+.img52{
+    background-image: url("Imagenes/num52.png");
+}
+.img53{
+    background-image: url("Imagenes/num53.png");
+}
+.img54{
+    background-image: url("Imagenes/num54.png");
+}
+.img55{
+    background-image: url("Imagenes/num55.png");
+}
+.img56{
+    background-image: url("Imagenes/num56.png");
+}
+.img57{
+    background-image: url("Imagenes/num57.png");
+}
+.img58{
+    background-image: url("Imagenes/num58.png");
+}
+.img59{
+    background-image: url("Imagenes/num59.png");
+}
+
+/*-----------------Numeros-------------*/
+.n0{
+    background-image: url("Imagenes/n0.png")
+}
+.n1{
+    background-image: url("Imagenes/n1.png")
+}
+.n2{
+    background-image: url("Imagenes/n2.png")
+}
+.n3{
+    background-image: url("Imagenes/n3.png")
+}
+.n4{
+    background-image: url("Imagenes/n4.png")
+}
+.n5{
+    background-image: url("Imagenes/n5.png")
+}
+.n6{
+    background-image: url("Imagenes/n6.png")
+}
+.n7{
+    background-image: url("Imagenes/n7.png")
+}
+.n8{
+    background-image: url("Imagenes/n8.png")
+}
+.n9{
+    background-image: url("Imagenes/n9.png")
+}
+
+.putImagen{
+    border: 0.30vw rgb(209, 38, 38) solid;
+    background-color: rgb(252, 169, 169);
+}
+
+
+.grap{
+    background-color: rgb(252, 232, 169);
+    border: 0.20vw rgb(0, 0, 0) solid;
+    z-index: 10;
+}
+
+.grapBab{
+    width: 4vw;
+    height: 4vw;
+}
+
+.grapAra{
+    width: 7vw;
+    height: 7vw;
+}
+
+.movNum{
+    
+}
+
+.correcta{
+    background-color: rgb(121, 232, 125);
+    background-image: url("Imagenes/palomita.png");
+}
+
+.incorrecta{
+    background-color: rgb(232, 132, 121);
+    background-image: url("Imagenes/tacha.png");
+}

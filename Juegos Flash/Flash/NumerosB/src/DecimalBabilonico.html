@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+  <head>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+      <link rel="stylesheet" type="text/css" href="DecimalBabilonicoEstilo.css">
+      <link rel="stylesheet" type="text/css" href="imagenes.css">
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/Draggable.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+      <title>Decimal a Babilonico</title>
+  	</head>
+   <body>
+      <div Class='top'>
+         <p>Ejercicio "Numeros Babilonicos"</p>
+         <button class="boton botonTop" onclick="document.location='../Index.html'">Volver</button>
+      </div>
+
+      <div class="cuerpo">
+         
+         <div class="BoxNum">
+            <div class="cuadroBabilonico">
+            <div class="num img1" >
+               <div id="nb1" class="numMov img1" data-num="1"></div>
+            </div>
+            <div class="num img2" >
+               <div id="nb2" class="numMov img2" data-num="2" ></div>
+            </div>
+            <div class="num img3" >
+               <div id="nb3" class="numMov img3" data-num="3" ></div>
+            </div>
+            <div class="num img4" >
+               <div id="nb4" class="numMov img4" data-num="4" ></div>
+            </div>
+            <div class="num img5" >
+               <div id="nb5" class="numMov img5" data-num="5" ></div>
+            </div>
+            <div class="num img6" >
+               <div id="nb6" class="numMov img6" data-num="6" ></div>
+            </div>
+            <div class="num img7" >
+               <div id="nb7" class="numMov img7" data-num="7" ></div>
+            </div>
+            <div class="num img8" >
+               <div id="nb8" class="numMov img8" data-num="8" ></div>
+            </div>
+            <div class="num img9" >
+               <div id="nb9" class="numMov img9" data-num="9" ></div>
+            </div>
+            <div class="num img10" >
+               <div id="nb10" class="numMov img10" data-num="10" ></div>
+            </div>
+            <div class="num img11" >
+               <div id="nb11" class="numMov img11" data-num="11" ></div>
+            </div>
+            <div class="num img12" >
+               <div id="nb12" class="numMov img12" data-num="12" ></div>
+            </div>
+            <div class="num img13" >
+               <div id="nb13" class="numMov img13" data-num="13" ></div>
+            </div>
+            <div class="num img14" >
+               <div id="nb14" class="numMov img14" data-num="14" ></div>
+            </div>
+            <div class="num img15" >
+               <div id="nb15" class="numMov img15" data-num="15" ></div>
+            </div>
+            <div class="num img16" >
+               <div id="nb16" class="numMov img16" data-num="16" ></div>
+            </div>
+            <div class="num img17" >
+               <div id="nb17" class="numMov img17" data-num="17" ></div>
+            </div>
+            <div class="num img18" >
+               <div id="nb18" class="numMov img18" data-num="18" ></div>
+            </div>
+            <div class="num img19" >
+               <div id="nb19" class="numMov img19" data-num="19" ></div>
+            </div>
+            <div class="num img20" >
+               <div id="nb20" class="numMov img20" data-num="20" ></div>
+            </div>
+            <div class="num img21" >
+               <div id="nb21" class="numMov img21" data-num="21" ></div>
+            </div>
+            <div class="num img22" >
+               <div id="nb22" class="numMov img22" data-num="22" ></div>
+            </div>
+            <div class="num img23" >
+               <div id="nb23" class="numMov img23" data-num="23" ></div>
+            </div>
+            <div class="num img24" >
+               <div id="nb24" class="numMov img24" data-num="24" ></div>
+            </div>
+            <div class="num img25" >
+               <div id="nb25" class="numMov img25" data-num="25" ></div>
+            </div>
+            <div class="num img26" >
+               <div id="nb26" class="numMov img26" data-num="26" ></div>
+            </div>
+            <div class="num img27" >
+               <div id="nb27" class="numMov img27" data-num="27" ></div>
+            </div>
+            <div class="num img28" >
+               <div id="nb28" class="numMov img28" data-num="28" ></div>
+            </div>
+            <div class="num img29" >
+               <div id="nb29" class="numMov img29" data-num="29" ></div>
+            </div>
+            <div class="num img30" >
+               <div id="nb30" class="numMov img30" data-num="30" ></div>
+            </div>
+            <div class="num img31" >
+               <div id="nb31" class="numMov img31" data-num="31" ></div>
+            </div>
+            <div class="num img32" >
+               <div id="nb32" class="numMov img32" data-num="32" ></div>
+            </div>
+            <div class="num img33" >
+               <div id="nb33" class="numMov img33" data-num="33" ></div>
+            </div>
+            <div class="num img34" >
+               <div id="nb34" class="numMov img34" data-num="34" ></div>
+            </div>
+            <div class="num img35" >
+               <div id="nb35" class="numMov img35" data-num="35" ></div>
+            </div>
+            <div class="num img36" >
+               <div id="nb36" class="numMov img36" data-num="36" ></div>
+            </div>
+            <div class="num img37" >
+               <div id="nb37" class="numMov img37" data-num="37" ></div>
+            </div>
+            <div class="num img38" >
+               <div id="nb38" class="numMov img38" data-num="38" ></div>
+            </div>
+            <div class="num img39" >
+               <div id="nb39" class="numMov img39" data-num="39" ></div>
+            </div>
+            <div class="num img40" >
+               <div id="nb40" class="numMov img40" data-num="40" ></div>
+            </div>
+            <div class="num img41" >
+               <div id="nb41" class="numMov img41" data-num="41" ></div>
+            </div>
+            <div class="num img42" >
+               <div id="nb42" class="numMov img42" data-num="42" ></div>
+            </div>
+            <div class="num img43" >
+               <div id="nb43" class="numMov img43" data-num="43" ></div>
+            </div>
+            <div class="num img44" >
+               <div id="nb44" class="numMov img44" data-num="44" ></div>
+            </div>
+            <div class="num img45" >
+               <div id="nb45" class="numMov img45" data-num="45" ></div>
+            </div>
+            <div class="num img46" >
+               <div id="nb46" class="numMov img46" data-num="46" ></div>
+            </div>
+            <div class="num img47" >
+               <div id="nb47" class="numMov img47" data-num="47" ></div>
+            </div>
+            <div class="num img48" >
+               <div id="nb48" class="numMov img48" data-num="48" ></div>
+            </div>
+            <div class="num img49" >
+               <div id="nb49" class="numMov img49" data-num="49" ></div>
+            </div>
+            <div class="num img50" >
+               <div id="nb50" class="numMov img50" data-num="50" ></div>
+            </div>
+            <div class="num img51" >
+               <div id="nb51" class="numMov img51" data-num="51" ></div>
+            </div>
+            <div class="num img52">
+               <div id="nb52" class="numMov img52" data-num="52" ></div>
+            </div>
+            <div class="num img53" >
+               <div id="nb53" class="numMov img53" data-num="53"  ></div>
+            </div>
+            <div class="num img54" >
+               <div id="nb54" class="numMov img54" data-num="54" ></div>
+            </div>
+            <div class="num img55" >
+               <div id="nb55" class="numMov img55" data-num="55" ></div>
+            </div>
+            <div class="num img56" >
+               <div id="nb56" class="numMov img56" data-num="56" ></div>
+            </div>
+            <div class="num img57" >
+               <div id="nb57" class="numMov img57" data-num="57" ></div>
+            </div>
+            <div class="num img58" >
+               <div id="nb58" class="numMov img58" data-num="58" ></div>
+            </div>
+            <div class="num img59" >
+               <div id="nb59" class="numMov img59" data-num="59" ></div>
+            </div>
+            </div>
+         </div>
+
+         <div class="CuadroEjercicios">
+            <p> Varios habitantes de South Park explotan sin razón aparente y Randy 
+               es el encargado de descubrir por qué. Por otro lado, los chicos tienen 
+               que representar las "Estaciones de la cruz" en misa, y Kyle trata de ''
+               conseguir una erección''.</p>
+
+            <div class="box"> 
+               <div class='Numero'> <p>1.- <span id='Ejercicio1'>2010</span></p> </div>
+                  
+               <div class="ConvBox" id="Box11" numProblema='1'>
+                  <div class="ConvBoxMov " id="BoxB11"  type-cuadro="0" numProblema='1'></div>
+               </div>
+               <div class="ConvBox" id="Box12" numProblema='1'>
+                  <div class="ConvBoxMov " id="BoxB12"  type-cuadro="0" numProblema='1'></div>
+               </div>
+               <div class="ConvBox" id="Box13" numProblema='1'>
+                  <div class="ConvBoxMov " id="BoxB13"  type-cuadro="0" numProblema='1'></div>
+               </div>
+            </div>
+
+            <div class="box"> 
+               <div class='Numero'> <p>1.- <span id='Ejercicio2'>2010</span></p> </div>
+                  
+               <div class="ConvBox" id="Box21" numProblema='2'>
+                  <div class="ConvBoxMov " id="BoxB21"  type-cuadro="0" numProblema='2'></div>
+               </div>
+               <div class="ConvBox" id="Box22" numProblema='2'>
+                  <div class="ConvBoxMov " id="BoxB22"  type-cuadro="0" numProblema='2'></div>
+               </div>
+               <div class="ConvBox" id="Box23" numProblema='2'>
+                  <div class="ConvBoxMov " id="BoxB23"  type-cuadro="0" numProblema='2'></div>
+               </div>
+            </div>
+
+            <div class="box"> 
+               <div class='Numero'> <p>1.- <span id='Ejercicio3'>2010</span></p> </div>
+                  
+               <div class="ConvBox" id="Box31" numProblema='3'>
+                  <div class="ConvBoxMov " id="BoxB31"  type-cuadro="0" numProblema='3'></div>
+               </div>
+               <div class="ConvBox" id="Box32" numProblema='3'>
+                  <div class="ConvBoxMov " id="BoxB32"  type-cuadro="0" numProblema='3'></div>
+               </div>
+               <div class="ConvBox" id="Box33" numProblema='3'>
+                  <div class="ConvBoxMov " id="BoxB33"  type-cuadro="0" numProblema='3'></div>
+               </div>
+            </div>
+
+            <div class="box"> 
+               <div class='Numero'> <p>1.- <span id='Ejercicio4'>2010</span></p> </div>
+                  
+               <div class="ConvBox" id="Box41" numProblema='4'>
+                  <div class="ConvBoxMov " id="BoxB41"  type-cuadro="0" numProblema='4'></div>
+               </div>
+               <div class="ConvBox" id="Box42" numProblema='4'>
+                  <div class="ConvBoxMov " id="BoxB42"  type-cuadro="0" numProblema='4'></div>
+               </div>
+               <div class="ConvBox" id="Box43" numProblema='4'>
+                  <div class="ConvBoxMov " id="BoxB43"  type-cuadro="0" numProblema='4'></div>
+               </div>
+            </div>
+
+            <div class="box"> 
+               <div class='Numero'> <p>1.- <span id='Ejercicio5'>2010</span></p> </div>
+                  
+               <div class="ConvBox" id="Box51" numProblema='5'>
+                  <div class="ConvBoxMov " id="BoxB51"  type-cuadro="0" numProblema='5'></div>
+               </div>
+               <div class="ConvBox" id="Box52" numProblema='5'>
+                  <div class="ConvBoxMov " id="BoxB52"  type-cuadro="0" numProblema='5'></div>
+               </div>
+               <div class="ConvBox" id="Box53" numProblema='5'>
+                  <div class="ConvBoxMov " id="BoxB53"  type-cuadro="0" numProblema='5'></div>
+               </div>
+            </div>
+
+            <button class="boton" onclick="boton()">Checar respuestas</button>
+
+         </div>
+      </div> 
+
+      <script src="script/comparar.js"></script>
+      <script src="script/read.js"></script>
+      <script src="DecimalBabilonicoScript.js"></script>
+      
+   </body>
+</html> 
